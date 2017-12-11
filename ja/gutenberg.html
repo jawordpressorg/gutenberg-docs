@@ -13,24 +13,24 @@
 <p class="aligncenter">Gutenberg は <a href="https://github.com/WordPress/gutenberg">GitHub</a> 上で開発されており、プロジェクトについて知るためには<a href="https://wordpress.org/gutenberg/handbook/">このドキュメンテーションをまず読むのがよいでしょう</a>。</p>
 <p>Gutenberg を使ってみた体験をぜひ聞かせてください。これは、WordPress の将来に大きな影響を与えることができるワクワクする機会です。Gutenberg を色々触って使ってみて、<a href="https://wordpressdotorg.polldaddy.com/s/gutenberg-support">感想を共有してください</a>。何回でも、好きなだけフィードバックを送信するのに使ってください。</p>
 <figure class="wp-block-image"><img src="https://wordpress.org/gutenberg/files/2017/12/Mobile.png" /></figure>
-<p>この新しいユーザーエクスペリエンスを構築している人たちを助けるための最も的確な方法は、特定のスクリプトや一連のタスクを使ってエディターをテストすることです。<a href="https://make.wordpress.org/test/handbook/call-for-testing/gutenberg-testing/">テストとやり方はこちらにあります</a>。</p><h2>What is a block?</h2>
-<p>One of the things you hear a lot about during discussions of Gutenberg are blocks. These blocks are a unified way to style content that currently requires shortcodes, embeds, widgets, post formats, custom post types, theme options, meta-boxes, and other formatting elements. By allowing rich customization without deep knowledge of code, blocks make good on the promise of WordPress: broad functionality with a clear, consistent user experience.</p>
+<p>この新しいユーザーエクスペリエンスを構築している人たちを助けるための最も的確な方法は、特定のスクリプトや一連のタスクを使ってエディターをテストすることです。<a href="https://make.wordpress.org/test/handbook/call-for-testing/gutenberg-testing/">テストとやり方はこちらにあります</a>。</p><h2>ブロックって何 ?</h2>
+<p>Gutenberg についての議論の中で多く聞いた言葉の一つにブロックがあります。このブロックは、ショートコード、埋め込み、ウィジェット、投稿フォーマット、カスタム投稿タイプ、テーマオプション、メタボックス、およびその他のフォーマット要素を必要とするコンテンツのスタイルを統一する方法です。コードを深く知らなくとも豊富なカスタマイズを可能にすることによって、WordPress の幅広い機能を明確かつ一貫したユーザーエクスペリエンスで実現します。</p>
 <figure class="wp-block-image alignwide"><img src="https://wordpress.org/gutenberg/files/2017/12/Gallery.png" /></figure>
-<p>The current WordPress editor is an open text window—it’s always been a wonderful blank canvas for writing, but when it comes to building posts and pages with images, multimedia, embedded content from social media, polls, and other elements, it required a mix of different approaches that were not always intuitive:</p>
+<p>現在の WordPress エディターは一つのオープンテキストウィンドウです。これは文章を書くためにはいつでも素晴らしい空白のキャンバスですが、イメージ、マルチメディア、ソーシャルメディア、投票、その他の要素からなる埋め込みコンテンツを含む投稿やページを作成する場合は、直感的ではないさまざまなアプローチを必要とします。</p>
 <ul>
-<li>Media library/HTML for images, multimedia and approved files.</li>
-<li>Pasted links for embeds.</li>
-<li>Shortcodes for specialized assets from plugins.</li>
-<li>Featured images for the image at the top of a post or page.</li>
-<li>Excerpts for subheads.</li>
-<li>Widgets for content on the side of a page.</li>
+<li>画像を挿入するための HTML やメディアライブラリー、マルチメディアや許可されたファイルの挿入。</li>
+<li>埋め込み用リンクの貼り付け。</li>
+<li>ある種のプラグインで用意されたショートコード。</li>
+<li>投稿や固定ページの上部に表示されるアイキャッチ画像。</li>
+<li>小見出しのための抜粋。</li>
+<li>ページの横にあるコンテンツのためのウィジェット。</li>
 </ul>
-<p>As we thought about these uses and how to make them obvious and consistent, we began to embrace the concept of “blocks.” All of the above items could be blocks: easy to search and understand, and easy to dynamically shift around the page. The block concept is very powerful, and if designed thoughtfully, can offer an outstanding editing and publishing experience.</p>
+<p>これらの利用について、すぐにわかる一貫性のあるものにする方法を考え、私たちは「ブロック」というコンセプトを採用し始めました。上記の項目はすべてブロックである可能性があります。すぐに見つけることができ理解しやすくブロックのコンセプトは非常に強力です。設計を慎重におこなえば、すぐれた編集とパブリッシングの体験が得られます。</p>
 <div class="wp-block-gallery alignwide columns-2 ">
 <figure class="blocks-gallery-image"><img src="https://wordpress.org/gutenberg/files/2017/12/Text.png" alt="" /></figure>
 <figure class="blocks-gallery-image"><img src="https://wordpress.org/gutenberg/files/2017/12/Dropcap.png" alt="" /></figure>
 </div>
-<p>Imagine a custom “employee” block that a client can drag to an About page to automatically display a picture, name, and bio. A whole universe of plugins that all extend WordPress in the same way. Simplified menus and widgets. Users who can instantly understand and use WordPress — and 90% of plugins.</p>
+<p>クライアントがドラッグして設定できる自動的に名前や写真および略歴を表示する会社紹介ページの「従業員」ブロックを想像してみてください。WordPress をすべて同じ方法で拡張するプラグインの世界。単純化されたメニューとウィジェット。WordPress とプラグインの 90% をユーザー誰もが即座に理解して使用できます。</p>
 <h2>The stages of Gutenberg</h2>
 <p>Gutenberg has three planned stages. The first, aimed for inclusion in WordPress 5.0, focuses on the post editing experience and the implementation of blocks. This initial phase focuses on a content-first approach. The use of blocks, as detailed above, allows you to focus on how your content will look without the distraction of other configuration options. This ultimately will help all users present their content in a way that is engaging, direct, and visual.</p>
 <p>These foundational elements will pave the way for stages two and three, planned for the next year, to go beyond the post into page templates and ultimately, full site customization.</p>
